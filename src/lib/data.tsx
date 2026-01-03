@@ -33,8 +33,15 @@ import LogoEg from '/public/images/logos/energaia.png';
 import LogoW3 from '/public/images/logos/w3.jpeg';
 
 import ProjectFiskil from '/public/images/evrmss.png';
-import ProjectWingie from '/public/images/project-wingie.png';
-import ProjectPepehousing from '/public/images/project-pepehousing.png';
+import ProjectOnegp from '/public/images/project-onegp.png';
+import ProjectHrm from '/public/images/appnap-hrm.png';
+import ProjectBMI from '/public/images/appnap-bmi.png';
+import Project2fa from '/public/images/appnap-2fa.png';
+import Projectbp from '/public/images/appnap-bp.png';
+import ProjectWti from '/public/images/appnap-wti.png';
+import ProjectSpring from '/public/images/eg-spring.png';
+import ProjectC4C from '/public/images/cash4cats.png';
+import ProjectSCM from '/public/images/schedule-management.png';
 
 import AvatarKrisztian from '/public/images/avatar-krisztian.png';
 import AvatarEugen from '/public/images/avatar-eugen.png';
@@ -254,7 +261,7 @@ export const PROJECTS: ProjectDetails[] = [
     name: 'EVRM',
     description:
       'End-to-end development of a visitor & employee access management system with touchless sign-in, QR code entry, visitor pre-registration, email notifications, digital signature, visitor screening, badge printing, emergency announcements, comprehensive employee management, meeting room booking, and scalability features.',
-    url: '#',
+    url: 'https://www.evrm.io/',
     previewImage: ProjectFiskil,
     technologies: [
       'Vue.js',
@@ -270,14 +277,32 @@ export const PROJECTS: ProjectDetails[] = [
       'SES',
       'EC2',
       'LightSail',
+      'Stripe'
+    ],
+  },
+  {
+    name: 'Schedule Management SaaS',
+    description:
+      'Architected and worked on APIs and infrastructure for a comprehensive schedule management SaaS platform. Built appointment booking system where businesses and customers can schedule appointments, track appointment status, manage various services, and communicate through integrated chat functionality.',
+    url: '#',
+    previewImage: ProjectSCM,
+    technologies: [
+      'PHP',
+      'Laravel',
+      'MySQL',
+      'Flutter',
+      'Socket.io',
+      'Docker',
+      'AWS',
+      'Lambda'
     ],
   },
   {
     name: 'OneGP App',
     description:
-      'HRM software to streamline employee management and HR processes, including payroll and attendance tracking. Built APIs for a mobile app used by GP employees, ensuring secure and efficient data access.',
-    url: 'https://play.google.com/store',
-    previewImage: ProjectWingie,
+      'HRM software to streamline employee management and HR processes, including payroll and attendance tracking. Architected and worked on the APIs and infrastructure for a mobile app used by GP employees, ensuring secure and efficient data access.',
+    url: 'https://play.google.com/store/apps/details?id=com.grameenphone.onegp',
+    previewImage: ProjectOnegp,
     technologies: [
       'PHP',
       'Laravel',
@@ -289,11 +314,11 @@ export const PROJECTS: ProjectDetails[] = [
     ],
   },
   {
-    name: 'Social Platform (5M Users)',
+    name: 'Walkie Talkie App(IOS)',
     description:
-      'Architected scalable social platform serving 5 Million users with 50% engagement increase. Enabled real-time chat functionality with 30% faster response times and implemented secure user communication with encryption.',
-    url: '#',
-    previewImage: ProjectPepehousing,
+      'Architected and worked on APIs and infrastructure for a scalable social platform serving 5 Million users with 50% engagement increase. Enabled real-time chat functionality with 30% faster response times and implemented secure user communication with encryption.',
+    url: 'https://apps.apple.com/gb/app/walkie-talkie-intercom-app/id1626711564',
+    previewImage: ProjectWti,
     technologies: [
       'REST API',
       'PHP',
@@ -302,9 +327,94 @@ export const PROJECTS: ProjectDetails[] = [
       'Socket.io',
       'Docker',
       'Azure',
-      'Terraform',
       'MySQL',
-      'ElasticSearch',
+      'JitsiMeet',
+    ],
+  },
+  {
+    name: 'Heart Rate Monitor App(IOS)',
+    description:
+      'Architected and worked on APIs and infrastructure for a health monitoring application. Built scalable backend systems with real-time data processing and secure user health data management.',
+    url: 'https://apps.apple.com/gb/app/heart-rate-monitor/id1591295637',
+    previewImage: ProjectHrm,
+    technologies: [
+      'REST API',
+      'PHP',
+      'Laravel',
+      'Azure',
+      'MySQL',
+    ],
+  },
+  {
+    name: 'BMI Calculator App(IOS)',
+    description:
+      'Architected and worked on APIs and infrastructure for a BMI calculation and health tracking application. Developed secure backend systems for user health data storage and analysis with real-time calculations.',
+    url: 'https://apps.apple.com/gb/app/bmi-calculator-weight-tracker/id1590860385',
+    previewImage: ProjectBMI,
+    technologies: [
+      'REST API',
+      'PHP',
+      'Laravel',
+      'Azure',
+      'MySQL',
+    ],
+  },
+  {
+    name: '2FA App(IOS)',
+    description:
+      'Architected and worked on APIs and infrastructure for a two-factor authentication application. Built secure authentication systems with encrypted token generation, user verification, and robust security protocols.',
+    url: 'https://apps.apple.com/gb/app/2-factor-authentication/id6505051115',
+    previewImage: Project2fa,
+    technologies: [
+      'REST API',
+      'PHP',
+      'Laravel',
+      'Azure',
+      'MySQL',
+    ],
+  },
+  {
+    name: 'Blood Pressure App(IOS)',
+    description:
+      'Architected and worked on APIs and infrastructure for a blood pressure monitoring application. Developed secure health data management systems with real-time tracking, analytics, and patient health record integration.',
+    url: 'https://apps.apple.com/gb/app/blood-pressure-app/id1591935741',
+    previewImage: Projectbp,
+    technologies: [
+      'REST API',
+      'PHP',
+      'Laravel',
+      'Azure',
+      'MySQL',
+    ],
+  },
+  {
+    name: 'Ecommerce Application',
+    description:
+      'Architected and worked on APIs and infrastructure for an ecommerce application with comprehensive order management and tracking system. Built secure payment processing, inventory management, and real-time order tracking functionality.',
+    url: 'https://springspirulina.com/th',
+    previewImage: ProjectSpring,
+    technologies: [
+      'REST API',
+      'PHP',
+      'WordPress',
+      'MySQL',
+      'WooCommerce'
+    ],
+  },
+  {
+    name: 'Inventory Management Application',
+    description:
+      'Architected and worked on APIs and infrastructure for an inventory management application with comprehensive inventory management and tracking system. Built secure inventory management, and real-time inventory tracking functionality.',
+    url: '#',
+    previewImage: ProjectC4C,
+    technologies: [
+      'PHP',
+      'Laravel',
+      'MySQL',
+      'VueJs',
+      'Docker',
+      'AWS',
+      'Javascript'
     ],
   },
 ];
